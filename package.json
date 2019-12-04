@@ -2,7 +2,6 @@
   "name": "Ganymede",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon app/index.js"
