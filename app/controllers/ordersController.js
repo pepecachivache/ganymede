@@ -35,11 +35,11 @@ module.exports = {
                     // setting url, NODE_ENV depends on ambient.
                     switch(process.env.NODE_ENV){
                         case 'development':
-                        url = 'http://localhost:4000/process';
+                        url = 'http://localhost:4000/api/process';
                         break;
                         
                         case 'production':
-                        url = 'https://themistos.herokuapp.com/process';
+                        url = 'https://themistos.herokuapp.com/api/process';
                         break; 
                     }
             
