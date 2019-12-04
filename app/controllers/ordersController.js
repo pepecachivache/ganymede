@@ -39,7 +39,7 @@ module.exports = {
                         break;
                         
                         case 'production':
-                        url = 'https://herokuapp.com';
+                        url = 'https://themistos.herokuapp.com/process';
                         break; 
                     }
             
@@ -68,7 +68,7 @@ module.exports = {
         },
         results: function (req,res){
             // check ambient to send order
-            let url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/api/product/search-order/': 'http://herokuapp.com/api/product/search-order/';
+            let url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/api/product/search-order/': 'https://ganymede.herokuapp.com/api/product/search-order/';
             let id = req.body._id;
             Orders.findById(id ,(err, ord) =>{
                 if(err)
