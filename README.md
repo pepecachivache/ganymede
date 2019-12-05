@@ -132,6 +132,23 @@ Para esto cree una migration, que crea el usuario en la base de datos automatica
 Este se puede realizar corriendo el comando node user.js dentro del directorio app/seeds/.
 
 
+## Heroku:
+### Ganymede
+Url api: https://ganymede.herokuapp.com/
+Url api Product search: https://ganymede.herokuapp.com/api/product/search
+
+
+
+Imagenes respuesta servidor Heroku:
+
+### Themisto sending proccesed data to Gaymede:
+https://ia601509.us.archive.org/33/items/capturadepantalla20191205alas11.56.20/Captura%20de%20pantalla%202019-12-05%20a%20las%2011.56.20.png
+
+### Ganymede sending Fullfilled order to callback:
+https://archive.org/download/capturadepantalla20191205alas11.56.20/Captura%20de%20pantalla%202019-12-05%20a%20las%2011.56.08.png
+
+
+
 
 
  
