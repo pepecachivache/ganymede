@@ -32,7 +32,7 @@ module.exports = {
                         order: orderObj     
                     })
                     // setting url, NODE_ENV depends on ambient.
-                  
+                    
                     switch(process.env.NODE_ENV){      
                         case 'development':
                         url = 'http://localhost:4000/api/process';
@@ -66,6 +66,7 @@ module.exports = {
     
 },
 results: function (req,res){
+    res.json("ok")
     // check ambient to send order
     let url = process.env.NODE_ENV === 'development' ? 'http://localhost:3000/api/product/search-order/': 'https://ganymede.herokuapp.com/api/product/search-order/';
     let id = req.body._id;
@@ -87,6 +88,7 @@ results: function (req,res){
 },
 //check  and update order from Themisto
 checkOrder: function(req, res){
+    res.json("ok");
     if(_.isEmpty(req.body.results))
     status = 'failed';
     else
@@ -104,7 +106,7 @@ checkOrder: function(req, res){
             //send updated order data to callback
             axios
             .post(result.order.callbackurl,result)
-            .then(res => res.json("Sending data to callback"))
+            .then(res => console.log("Sending data to callback"))
             .catch(err => console.log(err))
         }      
     })
