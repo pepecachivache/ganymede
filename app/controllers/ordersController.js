@@ -104,7 +104,7 @@ checkOrder: function(req, res){
             //send updated order data to callback
             axios
             .post(result.order.callbackurl,result)
-            .then(console.log("Sending data to callback"))
+            .then(res => res.json("Sending data to callback"))
             .catch(err => console.log(err))
         }      
     })
