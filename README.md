@@ -133,9 +133,22 @@ Este se puede realizar corriendo el comando node user.js dentro del directorio a
 
 
 ## Heroku:
-### Ganymede
-Url api: https://ganymede.herokuapp.com/
-Url api Product search: https://ganymede.herokuapp.com/api/product/search
+1. Crear cuenta en heroku.
+2. Crear App.
+3. Descargar Heroky CLi.
+4. Inicializar repositorio(en caso de no existir)
+5. Agregar origin de heroku app.
+6. Agregar archivos.
+7. Commit archivos.
+8. Push to heroku .
+
+
+### Ganymede API urls
+https://ganymede.herokuapp.com/
+Send Order: https://ganymede.herokuapp.com/api/product/search(POST)
+Search one Order : https://ganymede.herokuapp.com/api/product/search-order/{id}(POST)
+Search All Orders : https://ganymede.herokuapp.com/api/product/search-orders(GET)
+Search by category : https://ganymede.herokuapp.com/api//product/category/{category}(GET)
 
 
 
